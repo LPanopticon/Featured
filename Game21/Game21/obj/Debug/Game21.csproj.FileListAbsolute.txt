@@ -1,0 +1,10 @@
+C:\Users\logan\Documents\GitHub\Class Work\Game21\Game21\bin\Debug\Game21.exe.config
+C:\Users\logan\Documents\GitHub\Class Work\Game21\Game21\bin\Debug\Game21.exe
+C:\Users\logan\Documents\GitHub\Class Work\Game21\Game21\bin\Debug\Game21.pdb
+C:\Users\logan\Documents\GitHub\Class Work\Game21\Game21\obj\Debug\Game21.csprojAssemblyReference.cache
+C:\Users\logan\Documents\GitHub\Class Work\Game21\Game21\obj\Debug\Game21.csproj.CoreCompileInputs.cache
+C:\Users\logan\Documents\GitHub\Class Work\Game21\Game21\obj\Debug\Game21.exe
+C:\Users\logan\Documents\GitHub\Class Work\Game21\Game21\obj\Debug\Game21.pdb
+C:\Users\logan\Documents\GitHub\Class Work\Game21\Game21\bin\Debug\Casino.dll
+C:\Users\logan\Documents\GitHub\Class Work\Game21\Game21\bin\Debug\Casino.pdb
+C:\Users\logan\Documents\GitHub\Class Work\Game21\Game21\obj\Debug\Game21.csproj.CopyComplete
