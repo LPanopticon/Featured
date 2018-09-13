@@ -1,0 +1,85 @@
+<!doctype html>
+	<html lang="en">
+	  <head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="./css/pizza.css">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+		<title>Order</title>
+	  </head>
+	  <body>
+	  <div id="menuBG">
+			<h1>Build Your Pizza!</h1>
+			<form id="frmMenu">
+				<div class="menu">
+					<h3>Size</h3>
+					<input class="size" type="radio" name="Size" value="Personal Pizza"> Personal Pizza<br>
+					<input class="size" type="radio" name="Size" value="Medium Pizza"> Medium Pizza<br>
+					<input class="size" type="radio" name="Size" value="Large Pizza"> Large Pizza<br>
+					<input class="size" type="radio" name="Size" value="Extra Large Pizza"> Extra Large Pizza<br>
+				</div>
+				<div class="menu">
+					<h3>Crust</h3>
+					<input class="crust" type="radio" name="Crust" value="Plain Crust"> Plain Crust<br>
+					<input class="crust" type="radio" name="Crust" value="Garlic Butter Crust"> Garlic Butter Crust<br>
+					<input class="crust" type="radio" name="Crust" value="Spicy Crust"> Spicy Crust<br>
+					<input class="crust" type="radio" name="Crust" value="House Special Crust"> House Special Crust<br>
+					<input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust"> Cheese Stuffed Crust($3.00)<br>
+				</div>
+				<div class="menu">
+					<h3>Sauce</h3>
+					<input class="sauce" type="radio" name="Sauce" value="Marinara Sauce"> Classic Marinara<br>
+					<input class="sauce" type="radio" name="Sauce" value="White Sauce"> White Sauce<br>
+					<input class="sauce" type="radio" name="Sauce" value="Barbeque Sauce">Barbecue Sauce<br>
+					<input class="sauce" type="radio" name="Sauce" value="No Sauce"> No Sauce<br>
+				</div>
+				<div class="menu">
+					<h3>Cheese</h3>
+					<input class="cheese" type="radio" name="Cheese" value="None"> No Cheese<br>
+					<input class="cheese" type="radio" name="Cheese" value="Regular"> Regular<br>
+					<input class="cheese" type="radio" name="Cheese" value="Extra">Extra Cheese($3.00)<br>
+				</div>
+				
+				<div class="menu">
+					<h3>Meats</h3>
+					<input class="meats" type="checkbox" name="Meat" value="Pepperoni"> Pepperoni<br>
+					<input class="meats" type="checkbox" name="Meat" value="Sausage"> Sausage<br>
+					<input class="meats" type="checkbox" name="Meat" value="Canadian Bacon"> Canadian Bacon<br> 
+					<input class="meats" type="checkbox" name="Meat" value="Ground Beef"> Ground Beef<br>
+					<input class="meats" type="checkbox" name="Meat" value="Anchovy"> Anchovy<br>
+					<input class="meats" type="checkbox" name="Meat" value="Chicken"> Chicken<br>
+				</div>
+				<div class="menu">
+					<h3>Vegetables<br></h3>
+					<input class="vegetables" type="checkbox" name="Vegetable" value="Tomatoes"> Tomatoes<br>
+					<input class="vegetables" type="checkbox" name="Vegetable" value="Onions"> Onion<br>
+					<input class="vegetables" type="checkbox" name="Vegetable" value="Olives"> Olives<br> 
+					<input class="vegetables" type="checkbox" name="Vegetable" value="Green Peppers"> Green Peppers<br>
+					<input class="vegetables" type="checkbox" name="Vegetable" value="Mushrooms"> Mushrooms<br>
+					<input class="vegetables" type="checkbox" name="Vegetable" value="Pineapple"> Pineapple<br>
+					<input class="vegetables" type="checkbox" name="Vegetable" value="Spinach"> Spinach<br>
+					<input class="vegetables" type="checkbox" name="Vegetable" value="Jalapeno"> Jalapeno<br>
+				</div>
+				
+				
+			</form>
+			<input id="btnOrder" type="button" onclick="getReceipt()" 
+				value="Place Order">
+			<div id="cart">
+					<div id="showText"></div>
+					<div id="totalPrice"></div>
+				</div>
+		</div>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="./js/pizza.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	  </body>
+	</html>
