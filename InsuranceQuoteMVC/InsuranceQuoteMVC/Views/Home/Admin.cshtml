@@ -1,0 +1,34 @@
+﻿@using InsuranceQuoteMVC.ViewModels
+@model List<ResultVM> 
+
+
+<div class="row no-gutters m-3">
+    <div class="card col-sm-12 col-md-10 col-lg-6 mx-auto shadow">
+        <div class="card-header text-center">
+            <h5 class="m-0">Quote Requests</h5>
+        </div>
+        <div class="card-body border-bottom">
+             @foreach (var request in Model)
+             {
+            <div classs="row">
+                <div class="col">
+                    @request.Id
+                </div>
+                <div class="col">
+                    @request.FirstName
+                </div>
+                <div class="col">
+                    @request.LastName
+                </div>
+                <div class="col">
+                    @request.EmailAddress
+                </div>
+                <div class="col">
+                    @request.QuoteTotal
+                </div>
+            </div>
+             }
+        </div>
+    </div>
+
+</div>
