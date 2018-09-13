@@ -1,0 +1,125 @@
+﻿@model JobPlacementDashboard.Models.JPBulletin
+
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+<style>
+    .text_edit {
+         width: 500px;
+         height: 300px;
+         resize: none;        
+    }    
+    #view_text {
+         width: 500px;        
+    }
+</style>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <h4>JPBulletin</h4>
+    <hr />
+    @Html.LabelFor(model => model.BulletinCategoryEnum, htmlAttributes: new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.EnumDropDownListFor(model => model.BulletinCategoryEnum, new { htmlAttributes = new { @class = "form-control", @style = "width: auto;" } })
+        @Html.ValidationMessageFor(model => model.BulletinCategoryEnum, "", new { @class = "text-danger" })
+    </div>
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="container ">
+        <form name="bulletin" class="form-control">
+
+            <!-- Buttons -->
+
+            <input type="button" value="Paragraph" id="paragraphText" />
+
+            <input type="button" value="B" id="boldText" />
+
+            <input type="button" value="I" id="italicizeText" />
+
+            <input type="button" value="U" id="underLineText" />
+
+            <input type="button" value="Center" id="centerText" />
+
+            <input type="button" value="Add Link" id="addLink" />
+
+            <br />
+
+            <!-- Text area -->
+
+            <textarea class="text_edit" id="bulletinBody" name="BulletinBody"></textarea>
+
+            <br />
+
+        </form>
+    </div>
+
+    <div class="form-control">
+        <div>
+            <input type="submit" value="Create" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+<script type="text/javascript">
+
+    function wrapText(openTag, closeTag) {
+        var textarea = document.getElementById("bulletinBody");
+        if (textarea.selectionStart != undefined) {
+            if (textarea.selectionStart != textarea.selectionEnd) {
+                var newText = textarea.value.substring(0, textarea.selectionStart) +
+                    openTag + textarea.value.substring(textarea.selectionStart, textarea.selectionEnd) + closeTag +
+                    textarea.value.substring(textarea.selectionEnd);
+                textarea.value = newText;
+            }
+        }
+        else {
+            // For older browsers
+            var textRange = document.selection.createRange();
+            var rangeParent = textRange.parentElement();
+            if (rangeParent === textarea) {
+                textRange.text = openTag + textRange.text + closeTag;
+            }
+        }
+    }
+
+    $("#boldText").click(function () {
+        wrapText('<b>', '</b>');
+    });
+
+    $("#italicizeText").click(function () {
+        wrapText('<i>', '</i>');
+    });
+
+    $("#underLineText").click(function () {
+        wrapText('<u>', '</u>');
+    });
+
+    $("#centerText").click(function () {
+        wrapText('<center>', '</center>');
+    });
+
+    $("#paragraphText").click(function () {
+        wrapText('<p>', '</p>');
+    });
+
+    $("#addLink").click(function () {
+        wrapText('<a>', '</a>');
+    });
+   
+</script>
+
+   } 

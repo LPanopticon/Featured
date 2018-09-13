@@ -1,0 +1,1 @@
+Added look and functionality to a bulletin board for the job placement coordinator to use, provided a number of text editing tools as well as making it look good.

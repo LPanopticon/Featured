@@ -1,0 +1,1 @@
+This is an example of one of the many small cleanup tasks the project required, in this case making sure the Date field stopped showing minutes/hours

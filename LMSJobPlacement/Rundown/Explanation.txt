@@ -1,0 +1,1 @@
+Updated this controller to return a numeric representation of how many criteria in the associated table return true, the goal is to have a quick reference to how many tasks the particular student has completed.
